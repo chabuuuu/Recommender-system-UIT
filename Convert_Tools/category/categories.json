@@ -1,0 +1,207 @@
+[
+    {
+        "productid": "B0027DQHA0",
+        "categories": [
+            {
+                "name": "Movies & TV",
+                "subCategories": [
+                    {
+                        "name": "TV",
+                        "subCategories": []
+                    }
+                ]
+            },
+            {
+                "name": "Music",
+                "subCategories": [
+                    {
+                        "name": "Classical",
+                        "subCategories": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "productid": "0756400120",
+        "categories": [
+            {
+                "name": "Books",
+                "subCategories": [
+                    {
+                        "name": "Literature & Fiction",
+                        "subCategories": [
+                            {
+                                "name": "Anthologies & Literary Collections",
+                                "subCategories": [
+                                    {
+                                        "name": "General",
+                                        "subCategories": []
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "United States",
+                                "subCategories": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Science Fiction & Fantasy",
+                        "subCategories": [
+                            {
+                                "name": "Science Fiction",
+                                "subCategories": [
+                                    {
+                                        "name": "Anthologies",
+                                        "subCategories": []
+                                    },
+                                    {
+                                        "name": "Short Stories",
+                                        "subCategories": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "productid": "B0000012D5",
+        "categories": [
+            {
+                "name": "Music",
+                "subCategories": [
+                    {
+                        "name": "Blues",
+                        "subCategories": []
+                    },
+                    {
+                        "name": "Pop",
+                        "subCategories": []
+                    },
+                    {
+                        "name": "R&B",
+                        "subCategories": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "productid": "B00024YAOQ",
+        "categories": [
+            {
+                "name": "Books",
+                "subCategories": [
+                    {
+                        "name": "Business & Investing",
+                        "subCategories": [
+                            {
+                                "name": "Business Life",
+                                "subCategories": [
+                                    {
+                                        "name": "Motivation & Self-Improvement",
+                                        "subCategories": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "productid": "068413263X",
+        "categories": [
+            {
+                "name": "Books",
+                "subCategories": []
+            }
+        ]
+    },
+    {
+        "productid": "B000BUGXAU",
+        "categories": [
+            {
+                "name": "Pet Supplies",
+                "subCategories": [
+                    {
+                        "name": "Fish & Aquatic Pets",
+                        "subCategories": [
+                            {
+                                "name": "Aquariums",
+                                "subCategories": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "productid": "B0000A0QE6",
+        "categories": [
+            {
+                "name": "Clothing & Accessories",
+                "subCategories": [
+                    {
+                        "name": "Men",
+                        "subCategories": [
+                            {
+                                "name": "Tops & Tees",
+                                "subCategories": [
+                                    {
+                                        "name": "Dress Shirts",
+                                        "subCategories": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "productid": "B0007YMWC8",
+        "categories": [
+            {
+                "name": "Movies & TV",
+                "subCategories": [
+                    {
+                        "name": "Movies",
+                        "subCategories": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "productid": "B0000A0QE2",
+        "categories": [
+            {
+                "name": "Clothing & Accessories",
+                "subCategories": [
+                    {
+                        "name": "Men",
+                        "subCategories": [
+                            {
+                                "name": "Tops & Tees",
+                                "subCategories": [
+                                    {
+                                        "name": "Dress Shirts",
+                                        "subCategories": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

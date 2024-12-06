@@ -1,0 +1,82 @@
+[
+    {
+        "product": {
+            "productId": "B00064C0IU",
+            "title": "Oscar Eau de Toilette for Women by Oscar de La Renta",
+            "price": 24.19
+        },
+        "review": {
+            "userId": "A1FWT811DSZLC8",
+            "profileName": "Heidi M",
+            "helpfulness": "0/0",
+            "score": 3.0,
+            "time": 1360368000,
+            "summary": "doesn't last",
+            "text": "very light scent that doesn't last very long. pretty bottle but I was hoping for more of a freesia scent. which it was not."
+        }
+    },
+    {
+        "product": {
+            "productId": "B00064C0IU",
+            "title": "Oscar Eau de Toilette for Women by Oscar de La Renta",
+            "price": 24.19
+        },
+        "review": {
+            "userId": "A1THE6V6O8ROD4",
+            "profileName": "Donna Mpaulin \"PURPLE RAVEN\"",
+            "helpfulness": "0/0",
+            "score": 5.0,
+            "time": 1358467200,
+            "summary": "Smells divine.",
+            "text": "This is my second bottle of sheer freesia, I just love this fragrance, its a light delicate sent, beautiful, like a summer day."
+        }
+    },
+    {
+        "product": {
+            "productId": "B00064C0IU",
+            "title": "Oscar Eau de Toilette for Women by Oscar de La Renta",
+            "price": 24.19
+        },
+        "review": {
+            "userId": "A176IQ7MVD3N6T",
+            "profileName": "M. Avila",
+            "helpfulness": "0/0",
+            "score": 1.0,
+            "time": 1357084800,
+            "summary": "Very disappointed!",
+            "text": "This perfume is just AWFUL! Smells nothing like freesia.The gift recipient was not impressed. The worst is that it can't be returned!"
+        }
+    },
+    {
+        "product": {
+            "productId": "B00064C0IU",
+            "title": "Oscar Eau de Toilette for Women by Oscar de La Renta",
+            "price": 24.19
+        },
+        "review": {
+            "userId": "A34BDX4JVMG23Y",
+            "profileName": "Kim M. Colt",
+            "helpfulness": "0/0",
+            "score": 5.0,
+            "time": 1326240000,
+            "summary": "Nice gift",
+            "text": "This was a gift for my sister. It wowed her. She has always worn Freesia but typically can only find it in body lotion or such. This product really thrilled her, a nice perfume in her favorite scent with a beautiful package."
+        }
+    },
+    {
+        "product": {
+            "productId": "B000K5JBZU",
+            "title": "Optimum Care Anti-Breakage Therapy Moisture Replenish Cream Hairdress",
+            "price": 5.99
+        },
+        "review": {
+            "userId": "A3UWJXJI7S3T05",
+            "profileName": "PloveJ",
+            "helpfulness": "1/1",
+            "score": 5.0,
+            "time": 1351987200,
+            "summary": "TRULY MADE A DIFFERENCE!",
+            "text": "I have been using this product for a couple years now. I started using it because my hair had gotten so dry from all the chemical treatments and relaxers. This actualy came in the relaxer kit. I tried it and could not beleive the difference it made with one use. I could not find it in any of the stores at the time so I searched Amazon and they had it. I absolutely love it. It is the best moisturizing product I have used so far. My hair is soft with good elasticity and it is not breaking anywhere close to what it was. I am very happy with it."
+        }
+    }
+]
