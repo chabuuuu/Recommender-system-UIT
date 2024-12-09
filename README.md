@@ -73,3 +73,16 @@ High-order features (tương tác phức tạp giữa các đặc trưng):
 - Người dùng A thường mua điện thoại của hãng Y sau khi đã xem các bài đánh giá trên mạng xã hội.
 
 Chi tiết xem paper sau: [Deepfm paper](HelpfulPapers/deepfm.pdf)
+
+### Librecommender
+
+Một thư viện khác bên cạnh surpirse => dễ dùng hơn và có thể áp dụng vào production.
+
+### Neural collaborative filttering
+
+Neural Collaborative Filtering (NCF) là một phương pháp hiện đại trong Recommender Systems, sử dụng các mô hình học sâu (Deep Learning) để thay thế các thuật toán truyền thống như Matrix Factorization (MF) trong việc học các mối quan hệ giữa người dùng và sản phẩm từ ma trận tương tác (user-item interaction matrix).
+
+Vậy nó khác gì DeepFM giới thiệu ở trên:
+
+- NCF: Tập trung vào tương tác user-item, mạnh về việc học high-order interactions giữa user và item.
+- DeepFM: Phù hợp với các bài toán phức tạp hơn, học cả low-order và high-order interactions từ dữ liệu nhiều đặc trưng.
