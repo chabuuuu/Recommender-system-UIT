@@ -38,3 +38,51 @@ Cái này hiểu đơn giản là ví dụ: một user A nào đó mua táo, và
 Có thể dễ dàng implement bằng TSRF: https://www.tensorflow.org/recommenders/examples/dcn
 
 - ANN: đây là một thuật toán để optimize thời gian xuất input của retrieval stage, đọc [ANN Paper](HelpfulPapers/ann.pdf) để biết thêm chi tiết
+
+### DeepFM
+
+Ý tưởng đơn giản của DeepFm là nó combine 2 method: Matrix Factorizaion và Deep learning để xây dựng recommender system.
+
+- Deep Learning mạnh về recommend high order feature
+- Matrix factorization mạnh về recommend low order feature
+
+Vậy high order và low order feature là gì?
+
+- Low-order features: Là những đặc trưng đơn giản, trực tiếp và thường xuất hiện trong dữ liệu. Chúng là mối quan hệ giữa các thuộc tính cơ bản mà không cần qua xử lý phức tạp.
+  Ví dụ:
+  - Tuổi của người dùng.
+  - Giá của sản phẩm.
+  - Số lần một sản phẩm được mua.
+
+* High-order features: Là các đặc trưng phức tạp hơn, được sinh ra từ việc kết hợp hoặc tương tác giữa nhiều đặc trưng low-order. Những đặc trưng này thường được học thông qua các mô hình học sâu (Deep Learning) để tìm ra mối quan hệ tiềm ẩn mà con người khó thấy được.
+  Ví dụ:
+  - Mối quan hệ giữa sở thích của người dùng và danh mục sản phẩm.
+  - Xu hướng người dùng mua sản phẩm giảm giá vào cuối tháng.
+  - Mối tương quan giữa độ tuổi và loại sản phẩm người dùng hay mua.
+
+Cụ thể thì:
+
+Low-order features:
+
+- Người dùng A thích xem sản phẩm thuộc danh mục "Điện thoại".
+- Sản phẩm X có giá 10 triệu VND.
+
+High-order features (tương tác phức tạp giữa các đặc trưng):
+
+- Người dùng A có xu hướng mua sản phẩm "Điện thoại giá tầm 10-15 triệu" khi có khuyến mãi lớn.
+- Người dùng A thường mua điện thoại của hãng Y sau khi đã xem các bài đánh giá trên mạng xã hội.
+
+Chi tiết xem paper sau: [Deepfm paper](HelpfulPapers/deepfm.pdf)
+
+### Librecommender
+
+Một thư viện khác bên cạnh surpirse => dễ dùng hơn và có thể áp dụng vào production.
+
+### Neural collaborative filttering
+
+Neural Collaborative Filtering (NCF) là một phương pháp hiện đại trong Recommender Systems, sử dụng các mô hình học sâu (Deep Learning) để thay thế các thuật toán truyền thống như Matrix Factorization (MF) trong việc học các mối quan hệ giữa người dùng và sản phẩm từ ma trận tương tác (user-item interaction matrix).
+
+Vậy nó khác gì DeepFM giới thiệu ở trên:
+
+- NCF: Tập trung vào tương tác user-item, mạnh về việc học high-order interactions giữa user và item.
+- DeepFM: Phù hợp với các bài toán phức tạp hơn, học cả low-order và high-order interactions từ dữ liệu nhiều đặc trưng.
