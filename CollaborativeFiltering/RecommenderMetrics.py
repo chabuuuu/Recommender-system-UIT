@@ -19,7 +19,7 @@ class RecommenderMetrics:
 
         for userID, productID, actualRating, estimatedRating, _ in predictions:
             if estimatedRating >= minimumRating:
-                topN[int(userID)].append((productID, estimatedRating))
+                topN[userID].append((productID, estimatedRating))
 
         for userID, ratings in topN.items():
             ratings.sort(key=lambda x: x[1], reverse=True)
@@ -102,3 +102,18 @@ class RecommenderMetrics:
                 n += 1
 
         return total / n if n > 0 else 0
+    
+    @staticmethod
+    def UserCoverage(topNPredicted, numUsers, ratingThreshold=0):
+        hits = 0
+        for userID in topNPredicted.keys():
+            hit = False
+            # Iterate over the recommended products for each user
+            for productID, predictedRating in topNPredicted[userID]:
+                if predictedRating >= ratingThreshold:
+                    hit = True
+                    break
+            if hit:
+                hits += 1
+
+        return hits / numUsers

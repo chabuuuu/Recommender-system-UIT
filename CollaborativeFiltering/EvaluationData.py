@@ -1,18 +1,29 @@
 from surprise.model_selection import train_test_split, LeaveOneOut
 from surprise import KNNBaseline
+import gc
+from scipy.sparse import coo_matrix
+
 
 class EvaluationData:
     def __init__(self, dataset, popularityRankings):
+        print("Creating an evaluation data...")
         self.rankings = popularityRankings
 
         # Build a full training set for evaluating overall properties
         self.fullTrainSet = dataset.build_full_trainset()
         self.fullAntiTestSet = self.fullTrainSet.build_anti_testset()
 
+        print("Number of users in the full trainset:", self.fullTrainSet.n_users)
+        print("Number of items in the full trainset:", self.fullTrainSet.n_items)
+
+        print("Full trainset: ", self.fullTrainSet)
+
         # Build a 75/25 train/test split for measuring accuracy
+        print("Building train set and test set...")
         self.trainSet, self.testSet = train_test_split(dataset, test_size=.25, random_state=1)
 
         # Build a "leave one out" train/test split for evaluating top-N recommenders
+        print("Building LOOCV train set and test set...")
         LOOCV = LeaveOneOut(n_splits=1, random_state=1)
         for train, test in LOOCV.split(dataset):
             self.LOOCVTrain = train
@@ -21,9 +32,11 @@ class EvaluationData:
         self.LOOCVAntiTestSet = self.LOOCVTrain.build_anti_testset()
 
         # Compute similarity matrix between items for measuring diversity
+        print("Building item similarity matrix...")
         sim_options = {'name': 'cosine', 'user_based': False}
         self.simsAlgo = KNNBaseline(sim_options=sim_options)
         self.simsAlgo.fit(self.fullTrainSet)
+
 
     def GetFullTrainSet(self):
         return self.fullTrainSet

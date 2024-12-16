@@ -27,7 +27,7 @@ class AmazonReview:
         # Đọc file products để xây dựng ánh xạ productID ↔ title
         self.productID_to_name = {}
         self.name_to_productID = {}
-        with open(self.productsPath, newline='', encoding='utf-8') as csvfile:
+        with open(self.productsPath, newline='', encoding='ISO-8859-1') as csvfile:
             productReader = csv.reader(csvfile)
             next(productReader)  # Bỏ qua header
             for row in productReader:
