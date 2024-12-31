@@ -71,3 +71,24 @@ Island Essence Lotion: 4.17
 Azulen Supreme Facial Cream 1.66 oz by Dr. Eckstein: 4.17
 Total time for recommending top N: 803.0699920654297 seconds
 Memory usage: 1372.1640625 MB
+
+### Tuned
+
+AutoRecTuned = AutoRecAlgorithm(hiddenDim = 200, learningRate = 0.05)
+
+Algorithm RMSE MAE HR cHR ARHR Coverage Diversity Novelty  
+AutoRecTuned 1.4025 1.0915 0.0012 0.0012 0.0006 1.0000 0.9779 520.5799
+
+We recommend:
+Oscar Eau de Toilette for Women by Oscar de La Renta: 4.17
+Optimum Care Anti-Breakage Therapy Moisture Replenish Cream Hairdress: 4.17
+Michel Design Works Bath Gift Set - Beach: 4.17
+Liz Claiborne Curve Eau de Toilette Spray: 4.17
+Palladio Herbal Lipstick,: 4.17
+SOFT SHEEN Carson Optimum Care Anti-Breakage Therapy Featherlight Hairdress 4oz/113g: 4.17
+Island Essence Lotion: 4.17
+Creed Spring Flower by Creed for Women - 2.5 oz Millesime Spray: 4.17
+Island Essence Lotion: 4.17
+Azulen Supreme Facial Cream 1.66 oz by Dr. Eckstein: 4.17
+Total time for recommending top N: 772.515787601471 seconds
+Memory usage: 1389.046875 MB

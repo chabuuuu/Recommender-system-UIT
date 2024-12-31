@@ -27,25 +27,25 @@ random.seed(0)
 # Load up common data set for the recommender algorithms
 (amazonReview, evaluationData, rankings) = LoadAmazonReviewData()
 
-print("Searching for best parameters...")
-param_grid = {'hiddenDim': [120, 50, 200], 'learningRate': [0.00001, 0.05, 0.1]}
-gs = GridSearchCV(AutoRecAlgorithm, param_grid, measures=['rmse', 'mae'], cv=3)
+# print("Searching for best parameters...")
+# param_grid = {'hiddenDim': [120, 50, 200], 'learningRate': [0.00001, 0.05, 0.1]}
+# gs = GridSearchCV(AutoRecAlgorithm, param_grid, measures=['rmse', 'mae'], cv=3)
 
-gs.fit(evaluationData)
+# gs.fit(evaluationData)
 
-# best RMSE score
-print("Best RMSE score attained: ", gs.best_score['rmse'])
+# # best RMSE score
+# print("Best RMSE score attained: ", gs.best_score['rmse'])
 
-# combination of parameters that gave the best RMSE score
-print(gs.best_params['rmse'])
+# # combination of parameters that gave the best RMSE score
+# print(gs.best_params['rmse'])
 
 # Construct an Evaluator to, you know, evaluate them
 evaluator = Evaluator(evaluationData, rankings, amazonReview)
 
 #Autoencoder
-params = gs.best_params['rmse']
+# params = gs.best_params['rmse']
 
-AutoRecTuned = AutoRecAlgorithm(hiddenDim = params['hiddenDim'], learningRate = params['learningRate'])
+AutoRecTuned = AutoRecAlgorithm(hiddenDim = 200, learningRate = 0.05)
 evaluator.AddAlgorithm(AutoRecTuned, "AutoRecTuned")
 
 # Fight!
