@@ -28,7 +28,7 @@ random.seed(0)
 (amazonReview, evaluationData, rankings) = LoadAmazonReviewData()
 
 print("Searching for best parameters...")
-param_grid = {'hiddenDim': [5000, 50], 'learningRate': [0.00001, 0.05]}
+param_grid = {'hiddenDim': [120, 50], 'learningRate': [0.00001, 0.05]}
 gs = GridSearchCV(RBMAlgorithm, param_grid, measures=['rmse', 'mae'], cv=3)
 
 gs.fit(evaluationData)

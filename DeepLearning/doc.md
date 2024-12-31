@@ -102,4 +102,29 @@ Kết quả có tăng lên đôi chút nhưng không đáng kể, có vẻ như 
 ### Tập 10k record
 
 Cho chạy dò tổ hợp tham số:
+
+Vì data khá lớn nên thực hiện chạy trên colab như sau:
+![alt text](../Pictures/Screenshot_20241231_202528.png)
 param_grid = {'hiddenDim': [200, 100, 50, 150, 70], 'learningRate': [0.5, 0.01, 0.001, 0.002, 0.0001]}
+
+Kết quả sau khi chạy để tìm tham số tối ưu trên google colab:
+Best RMSE score attained: 1.3767759747292028
+{'hiddenDim': 120, 'learningRate': 0.05}
+
+We recommend:
+Computing recommendations...
+Liz Claiborne Curve Eau de Toilette Spray: 3.20
+Exuviance Purifying Cleansing Gel-7.2 oz: 3.20
+Neutrogena Energizing Sugar Body Scrub, Fresh Citrus, 6 Ounce (Pack of 2): 3.20
+Exuviance Vespera Bionic Serum: 3.20
+Exuviance Evening Restorative Complex: 3.20
+Eau d'Hadrien Perfume by Annick Goutal for women Personal Fragrances: 3.20
+Sof'feet Callus Reducer Kit: 3.20
+Revlon SkinLights Instant Skin Brightener, SPF 15, Bare Light 04, 1.5 Fluid Ounce (44.3 ml): 3.20
+Revlon SkinLights Instant Skin Brightener, SPF 15, Warm Light 03, 1.5 Fluid Ounce (44.3 ml): 3.20
+Comodynes Self-tanning Natural & Uniform Color Towelette 8 Pack: 3.20
+Total time for recommending top N: 0.1303696632385254 seconds
+Memory usage: 2400.9375 MB
+
+Algorithm RMSE MAE HR cHR ARHR Coverage Diversity Novelty  
+RBM - Tuned 1.3737 1.1109 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000

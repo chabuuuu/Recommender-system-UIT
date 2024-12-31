@@ -63,13 +63,13 @@ dataset = ed.GetFullTrainSet()
 # Dự đoán dựa trên model đã save
 
 #Untuned
-algo = RBMAlgorithm(model_path=savedModelPath, use_saved_model=True)
+# algo = RBMAlgorithm(model_path=savedModelPath, use_saved_model=True)
 
 #Tuned
-# params = {}
-# params['hiddenDim'] = 20
-# params['learningRate'] = 0.1
-# algo = RBMAlgorithm(hiddenDim = params['hiddenDim'], learningRate = params['learningRate'], use_saved_model=True)
+params = {}
+params['hiddenDim'] = 120
+params['learningRate'] = 0.05
+algo = RBMAlgorithm(hiddenDim = params['hiddenDim'], learningRate = params['learningRate'], use_saved_model=False)
 
 
 algo.fit(dataset, predictForAllUsers=False)
