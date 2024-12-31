@@ -1,0 +1,16 @@
+# RBM Untuned
+Đầu tiên ta sẽ thực hiện train model với tham số như sau:
+epochs=20, hiddenDim=100, learningRate=0.001, batchSize=100, sim_options={}
+
+// Mô tả code trong các file và công dụng của các hàm...
+
+Model sau khi train xong sẽ được save vào folder /rbm_model để tái sử dụng cho việc get top N recommend sau này
+
+Thực hiện lấy top N recommend cho user bất kì 
+
+Trong file RBMPredict.py:
+
+-->> Giải thích code trong file...
+
+
+
