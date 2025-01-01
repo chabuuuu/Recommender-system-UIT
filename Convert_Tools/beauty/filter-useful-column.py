@@ -4,7 +4,7 @@ import pandas as pd
 original_data = pd.read_csv('/home/haphuthinh/Workplace/School_project/do-an-1/Recommender-system-UIT/AmazonRatingData/raw-data/Beauty.csv')
 
 # Lấy các cột cần thiết: userId, productId, score, time
-filtered_data = original_data[['userId', 'productId', 'score', 'time']].head(200000)
+filtered_data = original_data[['userId', 'productId', 'score', 'time']].head(100000)
 
 # Lưu file mới để dùng với Surprise
 filtered_data.to_csv('/home/haphuthinh/Workplace/School_project/do-an-1/Recommender-system-UIT/AmazonRatingData/Beauty-rating.csv', index=False)
