@@ -12,11 +12,13 @@ class Evaluator:
         # Tính MAE
         mae_evaluator = RegressionEvaluator(metricName="mae", labelCol="rating", predictionCol="prediction")
         mae = mae_evaluator.evaluate(predictions)
+        print(f"Mean Absolute Error (MAE) = {mae}")
 
         # Tính RMSE
         print("Calculate RMSE");
         rmse_evaluator = RegressionEvaluator(metricName="rmse", labelCol="rating", predictionCol="prediction")
         rmse = rmse_evaluator.evaluate(predictions)
+        print(f"Root-mean-square error (RMSE) = {rmse}")
 
         # Lấy các khuyến nghị cho tất cả người dùng
         print("Get recommendations for all users");

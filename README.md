@@ -7,6 +7,27 @@ Data: https://drive.google.com/drive/folders/1dXl3mYd7Xovkwa9hP3ivJMqdu2kf5Cln?u
 
 # Research terms
 
+## User for test
+
+userId: A4VXOPYZD07XR
+
+Từng ratings:
+
+    productId                                              title  score        time
+
+0 B0000C4COU Derma e Pycnogenol Eye Gel With Green Tea Extract 5.0 1200355200
+1 B0000C4COX Derma e Pycnogenol Gel with Vitamins C E & A 5.0 1200355200
+2 B0001XLSQ6 Steam Facial By Kaz 5.0 1178409600
+
+Cái đầu là thiết bị xông hơi
+
+2 là Derma E Pycnogenol Gel with Vitamins C, E & A là một loại gel dưỡng da không chứa dầu, giúp cung cấp độ ẩm và giảm các dấu hiệu lão hóa và nhạy cảm của da. Sản phẩm này chứa Pycnogenol, một chất chống oxy hóa mạnh mẽ, kết hợp với các vitamin C, E và A để bảo vệ da khỏi các gốc tự do và cải thiện sức khỏe làn da12.
+
+Gel này giúp làm dịu da đỏ, kích ứng hoặc nhạy cảm, và có thể được sử dụng hàng ngày để có làn da mịn màng và khỏe mạnh hơn1. Bạn có thể sử dụng nó một mình hoặc dưới lớp kem dưỡng ẩm yêu thích của bạn để tăng cường độ ẩm và dưỡng chất1.
+
+Cái thứ 3 là
+**Steam Facial by Kaz** là một thiết bị xông hơi mặt giúp mở lỗ chân lông và loại bỏ các tạp chất dưới bề mặt da. Thiết bị này tạo ra hơi nước để làm sạch da, giúp da trở nên mềm mại và mịn màng hơn¹². Nó có thể được sử dụng tại nhà như một liệu pháp spa mini cá nhân, mang lại cảm giác thư giãn và cải thiện tình trạng da¹.
+
 ## Deep Learning
 
 ### TSRS (Tensor FLow Recommend System)

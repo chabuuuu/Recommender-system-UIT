@@ -36,24 +36,37 @@ if __name__ == "__main__":
     ratings = userIndexer.fit(ratings).transform(ratings)
     ratings = productIndexer.fit(ratings).transform(ratings)
     
-    (training, test) = ratings.randomSplit([0.8, 0.2])
+    (training, test) = ratings.randomSplit([0.8, 0.2], seed=42)
 
-    als = ALS(maxIter=5, regParam=0.01, userCol="userIdIndex", itemCol="productIdIndex", ratingCol="rating",
+    als = ALS(maxIter=20, regParam=0.1, rank=30, userCol="userIdIndex", itemCol="productIdIndex", ratingCol="rating",
               coldStartStrategy="drop")
     model = als.fit(training)
 
     predictions = model.transform(test)
 
     print("Calculating metrics...")
-    evaluator = Evaluator(model, ratings)
-    evaluator.calculate_metrics(predictions)    
+    # evaluator = Evaluator(model, ratings)
+    # evaluator.calculate_metrics(predictions)    
+    # evaluator = RegressionEvaluator(metricName="rmse", labelCol="rating",
+    #                                 predictionCol="prediction")
+    # rmse = evaluator.evaluate(predictions)
+    # print("Root-mean-square error = " + str(rmse))
 
+    mae_evaluator = RegressionEvaluator(metricName="mae", labelCol="rating", predictionCol="prediction")
+    mae = mae_evaluator.evaluate(predictions)
+    print(f"Mean Absolute Error (MAE) = {mae}")
+
+    # Tính RMSE
+    print("Calculate RMSE");
+    rmse_evaluator = RegressionEvaluator(metricName="rmse", labelCol="rating", predictionCol="prediction")
+    rmse = rmse_evaluator.evaluate(predictions)
+    print(f"Root-mean-square error (RMSE) = {rmse}")
 
     # Start timing
     start_time = time.time()
 
     # Get the index of the specific session_id
-    userIdIndex = ratings.filter(ratings['userId'] == "A3PB71Q63XF43G").select('userIdIndex').collect()[0]['userIdIndex']
+    userIdIndex = ratings.filter(ratings['userId'] == "A4VXOPYZD07XR").select('userIdIndex').collect()[0]['userIdIndex']
 
     userRecs = model.recommendForAllUsers(10)
     
