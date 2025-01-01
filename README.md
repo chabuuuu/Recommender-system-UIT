@@ -7,6 +7,35 @@ Data: https://drive.google.com/drive/folders/1dXl3mYd7Xovkwa9hP3ivJMqdu2kf5Cln?u
 
 # Research terms
 
+## User for test
+
+userId: A281NPSIMI1C2R
+
+Từng ratings:
+
+B000BR15GK Komenuka Bijin 10-Product Trial/Sample Set from Rice Bran 5.0 1155772800
+B000BR15GK Komenuka Bijin 10-Product Trial/Sample Set from Rice Bran 5.0 1153872000
+B0006FQN50 Venom Gloss 5.0 1207612800
+B000LC648O Barielle Intensive Nail Renewal Oil .50 Fl.Oz. 5.0 1170460800
+B000FBK4LO Thymes Bath Salts Envelope (2 oz) 5.0 1231718400
+B00021DUM2 Bare Escentuals bareMinerals Blush 5.0 1143331200
+B000FKJZKG Zia Natural Skincare Sea Tonic Aloe Toner, 6-Ounce Spray Bottles (Pack of 2) 5.0 1169769600
+B000GEWA26 Derma e Complete E Cranberry Creme, Intense Moisturizing Formula- Creme Hydrante, 2 oz (Pack of 2) 5.0 1159574400
+
+1. Komenuka Bijin 10-Product Trial/Sample Set from Rice Bran là một bộ sản phẩm thử nghiệm gồm 10 sản phẩm chăm sóc da và tóc từ cám gạo. Bộ sản phẩm này bao gồm các sản phẩm như sữa rửa mặt, dầu gội, dầu xả, kem dưỡng da và các sản phẩm khác, giúp bạn trải nghiệm toàn diện các lợi ích của cám gạo trong việc chăm sóc da và tóc1. Bộ sản phẩm này được thiết kế để cung cấp dưỡng chất, làm sạch và bảo vệ da và tóc, giúp bạn có thể thử nghiệm và tìm ra sản phẩm phù hợp nhất với nhu cầu của mình1. Bạn có thể sử dụng bộ sản phẩm này để có một trải nghiệm spa tại nhà, mang lại cảm giác thư giãn và cải thiện sức khỏe làn da và tóc1.
+
+2. Komenuka Bijin 10-Product Trial/Sample Set from Rice Bran là một bộ sản phẩm thử nghiệm gồm 10 sản phẩm chăm sóc da và tóc từ cám gạo. Bộ sản phẩm này bao gồm các sản phẩm như sữa rửa mặt, dầu gội, dầu xả, kem dưỡng da và các sản phẩm khác, giúp bạn trải nghiệm toàn diện các lợi ích của cám gạo trong việc chăm sóc da và tóc1. Bộ sản phẩm này được thiết kế để cung cấp dưỡng chất, làm sạch và bảo vệ da và tóc, giúp bạn có thể thử nghiệm và tìm ra sản phẩm phù hợp nhất với nhu cầu của mình1. Bạn có thể sử dụng bộ sản phẩm này để có một trải nghiệm spa tại nhà, mang lại cảm giác thư giãn và cải thiện sức khỏe làn da và tóc1.
+
+3. Barielle Intensive Nail Renewal Oil là một loại dầu dưỡng móng tay và móng chân, giúp phục hồi và bảo vệ móng khỏi hư tổn. Sản phẩm này chứa các thành phần như dầu mè, dầu hoa rum, dầu hướng dương và dầu dừa, cùng với keratin và vitamin E, giúp giữ ẩm và làm mềm lớp biểu bì12. Bạn nên thoa dầu này vào ban đêm trước khi đi ngủ, trên móng tay đã được sơn hoặc để trần, để thấy được hiệu quả vào sáng hôm sau khi móng tay của bạn trở nên khỏe mạnh và chắc chắn hơn12. Sản phẩm này cũng giúp ngăn ngừa gãy móng và làm lành các lớp biểu bì khô12.
+
+4. Thymes Bath Salts Envelope là một sản phẩm muối tắm giúp làm mềm và dưỡng ẩm da. Sản phẩm này chứa muối Epsom giàu khoáng chất tự nhiên, kết hợp với các thành phần dưỡng da như mật ong, dầu jojoba và lô hội12. Các loại muối tắm của Thymes có nhiều mùi hương khác nhau như Lavender, Eucalyptus, và Kimono Rose, mang lại cảm giác thư giãn và dễ chịu khi ngâm mình trong bồn tắm23. Bạn có thể sử dụng sản phẩm này để tạo ra một trải nghiệm spa tại nhà, giúp giảm căng thẳng và cải thiện sức khỏe làn da1.
+
+5. The bareMinerals Blush by Bare Escentuals is a popular choice for a natural, radiant look. They offer a variety of blush products, including the GEN NUDE Powder Blush1, which is designed to provide a soft, buildable color that flatters all skin tones. This blush is known for its clean, talc-free formula and is available in several shades to suit different preferences.
+
+6. Zia Natural Skincare Sea Tonic Aloe Toner là một loại toner dưỡng da không chứa cồn, giúp cung cấp độ ẩm và làm dịu da. Sản phẩm này chứa các thành phần tự nhiên như nước hoa hồng, lô hội, và chiết xuất tảo biển, giúp làm dịu và nuôi dưỡng làn da12.
+
+7. Derma E Complete E Cranberry Creme là một loại kem dưỡng ẩm mạnh mẽ, được thiết kế để cung cấp độ ẩm sâu và làm dịu da khô, ngứa. Sản phẩm này chứa chiết xuất từ quả nam việt quất (cranberry), một nguồn giàu tocotrienols và các axit béo omega-3 và omega-6, kết hợp với vitamin E để mang lại độ ẩm và phục hồi độ mềm mại cho da12.
+
 ## Deep Learning
 
 ### TSRS (Tensor FLow Recommend System)
