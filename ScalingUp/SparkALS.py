@@ -9,6 +9,7 @@ import psutil
 import os
 from AmazonRating import AmazonReview
 from Evaluator import Evaluator
+from SparkEvaluation import SparkRatingEvaluation
 
 if __name__ == "__main__":
     spark = SparkSession\
@@ -35,12 +36,30 @@ if __name__ == "__main__":
     # Fit the indexers
     ratings = userIndexer.fit(ratings).transform(ratings)
     ratings = productIndexer.fit(ratings).transform(ratings)
+
+    print("Show ratings data: ")
+    # Print the schema of the ratings DataFrame
+    print(ratings.printSchema())
+
     
-    (training, test) = ratings.randomSplit([0.8, 0.2], seed=42)
+    (training, test) = ratings.randomSplit([0.7, 0.3], seed=42)
+
+    # Show test data
+    print("Show test data: ")
+
+    print("Total test data: ", test.count())
+
+    print("First 5 rows of test data: ", test.show(5))
+
+    # Show training
+    print("Show training data: ")
+    print("Total training data: ", training.count())
 
     als = ALS(maxIter=20, regParam=0.1, rank=30, userCol="userIdIndex", itemCol="productIdIndex", ratingCol="rating",
               coldStartStrategy="drop")
     model = als.fit(training)
+
+
 
     predictions = model.transform(test)
 
@@ -52,21 +71,40 @@ if __name__ == "__main__":
     # rmse = evaluator.evaluate(predictions)
     # print("Root-mean-square error = " + str(rmse))
 
-    mae_evaluator = RegressionEvaluator(metricName="mae", labelCol="rating", predictionCol="prediction")
-    mae = mae_evaluator.evaluate(predictions)
-    print(f"Mean Absolute Error (MAE) = {mae}")
+    # mae_evaluator = RegressionEvaluator(metricName="mae", labelCol="rating", predictionCol="prediction")
+    # mae = mae_evaluator.evaluate(predictions)
+    # print(f"Mean Absolute Error (MAE) = {mae}")
 
-    # Tính RMSE
-    print("Calculate RMSE");
-    rmse_evaluator = RegressionEvaluator(metricName="rmse", labelCol="rating", predictionCol="prediction")
-    rmse = rmse_evaluator.evaluate(predictions)
-    print(f"Root-mean-square error (RMSE) = {rmse}")
+    # # Tính RMSE
+    # print("Calculate RMSE");
+    # rmse_evaluator = RegressionEvaluator(metricName="rmse", labelCol="rating", predictionCol="prediction")
+    # rmse = rmse_evaluator.evaluate(predictions)
+    # print(f"Root-mean-square error (RMSE) = {rmse}")
+
+
+    # Evalualtion:
+    #------------------------------------------
+    evaluations = SparkRatingEvaluation(
+        test, 
+        predictions,
+        col_user="userIdIndex",
+        col_item="productIdIndex",
+        col_rating="rating",
+        col_prediction="prediction"
+    )
+
+    print(
+        "RMSE score = {}".format(evaluations.rmse()),
+        "MAE score = {}".format(evaluations.mae()),
+        "Rsquared score = {}".format(evaluations.rsquared()),
+        "Explained Variance score = {}".format(evaluations.exp_var()),
+    )
 
     # Start timing
     start_time = time.time()
 
     # Get the index of the specific session_id
-    userIdIndex = ratings.filter(ratings['userId'] == "A4VXOPYZD07XR").select('userIdIndex').collect()[0]['userIdIndex']
+    userIdIndex = ratings.filter(ratings['userId'] == "A281NPSIMI1C2R").select('userIdIndex').collect()[0]['userIdIndex']
 
     userRecs = model.recommendForAllUsers(10)
     

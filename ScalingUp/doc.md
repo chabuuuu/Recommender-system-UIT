@@ -47,22 +47,22 @@ Memory usage: 100.68359375 MB
 Cho chạy dò tham số:
 
 Kết quả:
-Best parameters: rank=30, maxIter=20, regParam=0.1  
-Root-mean-square error = 2.0832469749998226
+Best parameters: rank=30, maxIter=20, regParam=0.1
 
+RMSE score = 1.7022076868809926 MAE score = 0.8878960800816615 Rsquared score = -0.9161540103248658 Explained Variance score = -0.7279929500564275
 Top 10 recommendations:  
-Artec Textureline Smoothing Serum, 8.4-Ounce Pump (Pack of 2)
-One with Nature Almond Bar Soap
-Ahava Mineral Eye Cream, 1oz
-Banana Boat Faces Plus Waterproof Sunscreen Stick SPF#30 16 ml
-PHEROSE by Realm - Gift Set for Women
-Natura Bisse Dry Skin Milk
-Paraffin Wax Refill With Heat Retaining Capacity
-Tri Structural Balance...NEW Hydrating Reconstructor 6oz
-NUXE Reve de Miel Family Balm-1.7 oz.
-Pevonia Evolutive Eye Cream - Ligne Yeux
-Total time for recommending top N: 2.9230191707611084 seconds
-Memory usage: 94.6015625 MB
+Bare Escentuals bareMinerals Blush
+Venom Gloss
+Derma e Complete E Cranberry Creme, Intense Moisturizing Formula- Creme Hydrante, 2 oz (Pack of 2)
+Barielle Intensive Nail Renewal Oil .50 Fl.Oz.
+Thymes Bath Salts Envelope (2 oz)
+Komenuka Bijin 10-Product Trial/Sample Set from Rice Bran
+Ahava Mens Deep Cleansing Gel, 3.4oz
+Ahava Mens Protective Moisturizing Fluid SPF 15, 1.7oz
+Healthy Sexy Hair Soy Paste Texture Pomade (1.8oz)
+American Crew Grooming Creme for Men, 3.53-Ounce Jars (Pack of 2)
+Total time for recommending top N: 3.35653018951416 seconds
+Memory usage: 89.23046875 MB
 
 # Tập 100k record
 
@@ -87,24 +87,19 @@ Memory usage: 100.57421875 MB
 
 ### Full tập 200k record
 
-Calculating metrics...
-Mean Absolute Error (MAE) = 1.0386897842444986  
-Calculate RMSE
-Root-mean-square error (RMSE) = 2.0488968935023872
+RMSE score = 2.2256901896972496 MAE score = 1.3276668848043172 Rsquared score = -2.1208552176544297 Explained Variance score = -1.2044114239996988
 
 Top 10 recommendations:  
-Steam Facial By Kaz  
-Derma e Pycnogenol Gel with Vitamins C E & A  
-Derma e Pycnogenol Eye Gel With Green Tea Extract  
-Coco by Chanel for Women. 1.7 Oz Eau De Toilette Spray  
-100% Unrefined Certified Grade A Shea Butter with a Hint of Organic Lavender Essential Oil 4 oz. By AAA Shea Butter
-Zum Rub Body Moisturizer Lavender-Mint -- 2.5 oz  
-BLINC KISS ME MASCARA  
-Refinity Rejuvenating Hydrogel - 15% AHA 2 fl oz.  
-Refinity Rejuvenating Lotion 2 oz  
-The Body Shop Lip Liner Fixer
+Kiss My Face Pore Shrink Deep Pore Cleansing Mask  
+Avalon Organics CoQ10 Facial Cleansing Creme  
+Dove Sensitive Essentials Cleansing Cloths, Refill, 30 Count  
+Komenuka Bijin Premium Hair Care Set: Moisturizing Hair Shampoo & Hair Treatment / Conditioner
+Burt's Bees Pore Refining Mask with French Green Clay, 1-Ounce Jar  
+Komenuka Bijin 10-Product Trial/Sample Set from Rice Bran  
+Burt's Bees Burt's Bees Milk & Honey Body Lotion Naturally Nourishing  
+Mini Lotion Kit - 1 oz./3 bottle  
+Bliss Diamancel Diamond Tough Foot Buffer No.11, Medium  
+Venom Gloss
 
-Total time for recommending top N: 44.94420886039734 seconds
-Memory usage: 96.91796875 MB
-
-Mặc dù chạy rất nhanh nhưng điểm số không được cao cho lắm mặc dù đã tuning
+Total time for recommending top N: 37.612921476364136 seconds
+Memory usage: 114.25 MB

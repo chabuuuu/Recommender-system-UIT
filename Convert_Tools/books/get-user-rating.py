@@ -18,10 +18,10 @@ def get_user_rated_products(user_id, ratings_file, products_file):
 
 # Sử dụng hàm
 # Tập này sẽ được xử lý như sau: file Beaty.csv gốc sẽ được lọc ra các cột cần thiết (userId, productId, score, time)
-ratingsPath = '/home/haphuthinh/Workplace/School_project/do-an-1/Recommender-system-UIT/AmazonRatingData/Beauty-rating.csv'
+ratingsPath = '/home/haphuthinh/Workplace/School_project/do-an-1/Recommender-system-UIT/AmazonRatingData/Books-rating.csv'
 
 # Tập này sẽ được xử lý như sau: file Beaty.csv gốc sẽ được lọc ra các cột cần thiết (productId, title)
-productsPath = '/home/haphuthinh/Workplace/School_project/do-an-1/Recommender-system-UIT/AmazonRatingData/Beauty-product.csv'
+productsPath = '/home/haphuthinh/Workplace/School_project/do-an-1/Recommender-system-UIT/AmazonRatingData/Books-product.csv'
 user_id = 'A281NPSIMI1C2R'  # ID của người dùng cần tìm
 
 rated_products = get_user_rated_products(user_id, ratingsPath, productsPath)
